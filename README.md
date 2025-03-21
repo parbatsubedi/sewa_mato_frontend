@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SewaMato 🔧  
+**Hyperlocal Service Marketplace for Nepal**  
+*Next.js Frontend Application*
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-14.2.3-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://react.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
 
+## 🌐 Live Demo
+https://sewamato.netlify.app *(Demo coming soon)*
+
+## 📋 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Running Locally](#-running-locally)
+- [Scripts](#-scripts)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
+
+## 🚀 Features
+### Core Functionality
+- 📍 Location-based service discovery (Kathmandu Valley focused)(in v2)
+- 🔍 Advanced search with Nepali service categories
+- 📱 Mobile-first responsive design
+- 🌐 Nepali/English language support
+
+### User Experience
+- ✅ Service provider verification badges
+- ⭐ Rating and review system
+- 💬 Real-time chat with providers(in v2)
+- 📅 Booking and scheduling system(in v2)
+
+## 💻 Tech Stack
+**Frontend**
+- Next.js 14 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui (Component Library)
+- React Query (Data Fetching)
+- Zustand (State Management)
+
+**Services**
+- Mapbox (Nepal Maps)(in v2)
+- Nepali Date Converter (Bikram Sambat)
+- Nepal-Phone-Number (Validation)
+- Khalti/eSewa SDKs
+
+## 📥 Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone repository
+git clone git@github.com:parbatsubedi/sewa_mato_frontend.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+cd sewa_mato_frontend
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Copy environment file
+cp .env.example .env.local
