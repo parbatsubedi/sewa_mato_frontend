@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation/navigation";
+import Footer from "@/components/Footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SewaMato",
-  description: "Hyperlocal Service Marketplace Nepal",
+  title: 'SewaMato - Hyperlocal Service Marketplace for Nepal',
+  description: 'Connect with verified local service providers in Nepal - plumbers, electricians, tutors, cleaners, and more.',
 };
 
 export default function RootLayout({
@@ -27,7 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Navigation />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
